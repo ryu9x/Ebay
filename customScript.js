@@ -16,7 +16,7 @@ function writeAboutusHTML(){
 }
 
 function writeFeedbackHTML(){
-	return "<div class='panel panel-success'><div class='panel-heading'><b>Feedback</b></div><div class='panel-body'>We do business so we need trust and trust from buyers. Because of that we need your help by leaving <b>positive feedback</b> and <b>5 star rating</b> for us at the product you bought.Please contact us immediately if any of the products do not satisfy you, we sincerely apologize for that. We are always here to serve you..</div></div>";
+	return "<div class='panel panel-success'><div class='panel-heading'><b>Feedback</b></div><div class='panel-body'>We do business so we need trust and trust from buyers. Because of that we need your help by leaving <b>positive feedback</b> and <b>5 star rating</b> for us at the product you bought.Please contact us immediately if any of the products do not satisfy you, we sincerely apologize for that. We are always here to serve you.</div></div>";
 }
 
 function writeContactHTML(){
@@ -29,8 +29,8 @@ function writeContactHTML(){
 function changeTemplate(x,y){
 	var col1 = "col-xs-"+x;
 	var col2 = "col-xs-"+y;
-	document.getElementById("list-template-2").setAttribute("class",col1)
-	document.getElementById("list-template-0").setAttribute("class",col2)
+	document.getElementById("list-template-2").setAttribute("class",col1);
+	document.getElementById("list-template-0").setAttribute("class",col2);
 }
 
 document.getElementById("list-template-3").innerHTML += writePaymentHTML();
