@@ -1,1 +1,1 @@
-alert("Abcd");
+console.log("A");
