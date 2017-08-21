@@ -1,3 +1,4 @@
+
 function writePaymentHTML(){
 	return "<div class='panel panel-success'><div class='panel-heading'><b>Payment</b></div><div class='panel-body'><ul><li>We only accept PayPal payments.</li><li>Please pay within 5 days after auction is finished.</li><li class='text-danger'>We do not responsible for any custom duty or import tax.</li></ul></div></div>";
 }
@@ -22,7 +23,15 @@ function writeContactHTML(){
 	return "<div class='panel panel-success'><div class='panel-heading'><b>Contact us</b></div><div class='panel-body'><p class='small'><i>Please message for us via Ebay Message.</i></p><a style='display: block;overflow: hidden;position: relative;text-indent: 9999px; width: 156px;height: 59px;' href='www.ebay.com/usr/i_sell_goods_from_japan'><img style='position:absolute;top:-56px;left:0px' src='https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png' alt='Message for us' width='304' height='236'></a></div></div>";
 }
 
-
+//Change template
+//x: value of col-2
+//y: value of col-0
+function changeTemplate(x,y){
+	var col1 = "col-xs-"+x;
+	var col2 = "col-xs-"+y;
+	document.getElementById("list-template-2").setAttribute("class",col1)
+	document.getElementById("list-template-0").setAttribute("class",col2)
+}
 
 document.getElementById("list-template-3").innerHTML += writePaymentHTML();
 document.getElementById("list-template-3").innerHTML += writeShippingHTML();
@@ -30,3 +39,4 @@ document.getElementById("list-template-3").innerHTML += writeReturnHTML();
 document.getElementById("list-template-3").innerHTML += writeAboutusHTML();
 document.getElementById("list-template-3").innerHTML += writeFeedbackHTML();
 document.getElementById("list-template-3").innerHTML += writeContactHTML();
+
